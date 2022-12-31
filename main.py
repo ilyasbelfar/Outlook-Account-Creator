@@ -12,6 +12,7 @@ from password_generator import PasswordGenerator
 from selenium_stealth import stealth
 from faker import Faker
 from fake_headers import Headers
+import platform
 
 
 def Type_Me(element: WebElement, text: str):
@@ -63,9 +64,18 @@ def Generate_Proxy():
 
 
 def Prepare_Env(proxy):
+
+    OSNAME = platform.system()
+    if OSNAME == 'Linux':
+        OSNAME = 'lin'
+    elif OSNAME == 'Darwin':
+        OSNAME = 'mac'
+    elif OSNAME == 'Windows':
+        OSNAME = 'win'
+
     header = Headers(
         browser="chrome",
-        os="win",
+        os=OSNAME,
         headers=False
     ).generate()
     agent = header['User-Agent']
@@ -190,6 +200,7 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
 if __name__ == "__main__":
 
     try:
+
         proxy = Generate_Proxy()
 
         driver = Prepare_Env(proxy)
@@ -204,4 +215,4 @@ if __name__ == "__main__":
 
     except Exception as ex:
         print(ex.msg)
-        driver.close()
+        # driver.close()
