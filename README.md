@@ -1,8 +1,21 @@
-# <p align="center">Outlook Account Creator</p>
+# <p align="center">✅ Outlook Account Creator</p>
 <p align="center"><img src="images/Outlook-Logo.png" alt="Outlook" style="max-width: 60% !important"></p>
 <p align="center">✨🚀A Fast And Captcha Solving Outlook Account Creator Using Python &amp; Selenium Webdriver✨🚀</p>
 
 ----
+### <p align="center">☄ Features ☄</p>
+<br>
+                     
+    • Very fast
+
+    • Highly customizable
+    
+    • Settings for automatisation
+                     
+    • Automatically removes duplicates
+<br>
+
+-----
 
 ## <p align="center">🔩 Requirements 🔩</p>
 <br>
