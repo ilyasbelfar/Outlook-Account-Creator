@@ -56,4 +56,5 @@ python main.py
 
 ## <p align="center">📌 Other 📌</p>
 <br>
-<p align="center"><strong>This script is made for educational purposes only.</strong><br><br>If you have any ideas to improve this script, please make a pull request.</p>
+<p align="center"><strong>This script is made for educational purposes only.</strong><br>
+<p align="center"><strong>The proxies that are scraped from sslproxies.org and used in our script are free, So it is normal when you face frequent connection failures that hinder the script normal flow, leading to the script auto restarts from scratch.</strong><br><br>If you have any ideas to improve this script, please make a pull request.</p>
