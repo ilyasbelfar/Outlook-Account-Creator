@@ -12,8 +12,6 @@
 * Memory-efficient script.
 <br>
 
-<br>
-
 -----
 
 ## <p align="center">🔩 Requirements 🔩</p>
