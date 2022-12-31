@@ -11,7 +11,7 @@
 * Automatic retrieval of proxies from **sslproxies.org**.
 * User-Agent rotation.
 * The script starts over automatically from scratch when it fails (e.g. The script restarts when the chosen proxy is bad/dead and can't connect to outlook's website).
-* Tested and worked 100% on multiple platforms: **Windows**, **Linux**, **MacOS**.
+* Tested and worked 100% on multiple platforms: **Windows**, **Linux** and **MacOS**.
 * Memory-efficient script.
 <br>
 
