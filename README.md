@@ -5,14 +5,7 @@
 ----
 ### <p align="center">☄ Features ☄</p>
 <br>
-                     
-    • Very fast
 
-    • Highly customizable
-    
-    • Settings for automatisation
-                     
-    • Automatically removes duplicates
 <br>
 
 -----
