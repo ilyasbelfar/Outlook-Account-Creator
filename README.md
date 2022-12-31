@@ -23,7 +23,9 @@
 `lxml`
 `fake-headers`
 
-<a href="https://www.python.org/">Python3</a> or higher.
+🐍 <a href="https://www.python.org/">Python3</a> or higher.
+
+🌎 <a href="https://www.google.com/intl/en_us/chrome">Google Chrome Browser</a>
 <br>
 
 
