@@ -4,11 +4,13 @@
 
 ----
 ### <p align="center">☄ Features ☄</p>
+* Fully Automatic Account Creator.
 * Bypass **outlook funcaptcha** using **Nopecha** extension.
 * Automatic Nopecha extension integration.
 * Integrated **proxy rotation** for IP change.
-* Automatic retrieval of proxies.
+* Automatic retrieval of proxies from **sslproxies.org**.
 * User-Agent rotation.
+* The script starts over automatically from scratch when it fails (e.g. The script restarts when the chosen proxy is bad/dead and can't connect to outlook's website).
 * Memory-efficient script.
 <br>
 
