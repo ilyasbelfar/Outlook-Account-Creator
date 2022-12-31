@@ -191,6 +191,7 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
             f.write(f"Email: {username}@outlook.com\n")
             f.write(f"Password: {password}\n")
             f.close()
+            return False
 
     except Exception as ex:
         print(ex.msg)
@@ -199,20 +200,25 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
 
 if __name__ == "__main__":
 
-    try:
+    while(True):
 
-        proxy = Generate_Proxy()
+        try:
 
-        driver = Prepare_Env(proxy)
+            proxy = Generate_Proxy()
 
-        wait = WebDriverWait(driver, 10)
+            driver = Prepare_Env(proxy)
 
-        password, username, firstname, lastname, day, month, year = Generate_Account_Details()
+            wait = WebDriverWait(driver, 10)
 
-        Create_Outlook_Account(driver, password, username, firstname, lastname, day, month, year)
+            password, username, firstname, lastname, day, month, year = Generate_Account_Details()
 
-        driver.close()
+            Create_Outlook_Account(driver, password, username, firstname, lastname, day, month, year)
 
-    except Exception as ex:
-        print(ex.msg)
-        driver.close()
+            driver.close()
+            
+            break
+
+        except Exception as ex:
+            print(ex.msg)
+            driver.close()
+            continue
