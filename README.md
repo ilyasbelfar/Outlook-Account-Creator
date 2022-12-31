@@ -4,6 +4,12 @@
 
 ----
 ### <p align="center">☄ Features ☄</p>
+* Bypass **outlook funcaptcha** using **Nopecha** extension.
+* Automatic Nopecha extension integration.
+* Integrated **proxy rotation** for IP change.
+* Automatic retrieval of proxies.
+* User-Agent rotation.
+* Memory-efficient script.
 <br>
 
 <br>
