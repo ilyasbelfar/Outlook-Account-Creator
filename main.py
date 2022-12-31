@@ -173,7 +173,7 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
         button.click()
 
     except Exception as ex:
-        print(ex)
+        print(ex.msg)
         traceback.print_exc()
 
     try:
@@ -185,7 +185,7 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
             f.close()
 
     except Exception as ex:
-        print(ex)
+        print(ex.msg)
         traceback.print_exc()
         driver.close()
     
@@ -206,5 +206,5 @@ if __name__ == "__main__":
         driver.close()
 
     except Exception as ex:
-        print(ex)
-        driver.close()
+        print(ex.msg)
+        sleep(1000)
