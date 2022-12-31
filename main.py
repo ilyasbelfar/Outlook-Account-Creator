@@ -53,7 +53,6 @@ def Get_Valid_Proxy(proxies_list):
             response = requests.get(url , headers=headers, proxies=proxies, timeout=1)
             if(response.status_code == 200):
                 return proxy
-                break
         except:
             continue
 
