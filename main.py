@@ -12,7 +12,6 @@ from password_generator import PasswordGenerator
 from selenium_stealth import stealth
 from faker import Faker
 from fake_headers import Headers
-import traceback
 
 
 def Type_Me(element: WebElement, text: str):
@@ -174,7 +173,6 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
 
     except Exception as ex:
         print(ex.msg)
-        traceback.print_exc()
 
     try:
         wait.until(EC.title_contains('Outlook'))
@@ -186,7 +184,6 @@ def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, las
 
     except Exception as ex:
         print(ex.msg)
-        traceback.print_exc()
         driver.close()
     
 
