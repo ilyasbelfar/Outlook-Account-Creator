@@ -4,7 +4,7 @@
 
 ----
 
-### <p align="center">🔩 Requirements 🔩</p>
+## <p align="center">🔩 Requirements 🔩</p>
 <br>
 <p align="center"> <strong>Install this pre-run requirements before running the script.</strong></p>
 
@@ -20,6 +20,23 @@
 <a href="https://www.python.org/">Python3</a> or higher.
 <br>
 
+
+----
+
+## <p align="center">❓ How to use ❓</p>
+<br>
+<p align="center"><strong>Install Requirements</strong></p>
+
+```
+pip install -r requirements.txt
+```
+
+
+<p align="center"><strong>Run</strong></p>
+
+```
+python main.py
+```
 
 ----
 
