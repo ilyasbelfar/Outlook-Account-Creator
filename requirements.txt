@@ -1,0 +1,8 @@
+selenium
+requests
+undetected-chromedriver
+selenium-stealth
+random-password-generator
+Faker
+lxml
+fake-headers
