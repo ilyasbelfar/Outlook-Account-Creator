@@ -1,5 +1,4 @@
 import platform
-import platform
 if platform.system() == 'Darwin':
     from selenium import webdriver
 else:
