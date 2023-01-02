@@ -1,4 +1,9 @@
-import undetected_chromedriver as uc
+import platform
+import platform
+if platform.system() == 'Darwin':
+    from selenium import webdriver
+else:
+    import undetected_chromedriver as webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,7 +17,6 @@ from password_generator import PasswordGenerator
 from selenium_stealth import stealth
 from faker import Faker
 from fake_headers import Headers
-import platform
 
 
 def Type_Me(element: WebElement, text: str):
@@ -80,7 +84,7 @@ def Prepare_Env(proxy):
     ).generate()
     agent = header['User-Agent']
 
-    options = uc.ChromeOptions()
+    options = webdriver.ChromeOptions()
     options.add_argument('--start-maximized')
     options.add_argument('--disable-popup-blocking')
     options.add_argument('--disable-dev-shm-usage')
@@ -88,11 +92,13 @@ def Prepare_Env(proxy):
     options.add_argument('--no-sandbox')
     options.add_argument('--log-level=3')
     options.add_argument('--disable-blink-features=AutomationControlled')
+    options.add_experimental_option('excludeSwitches', ['enable-automation'])
+    options.add_experimental_option('useAutomationExtension', False)
     options.add_argument(f'--user-agent={agent}')
     options.add_argument(f'--proxy-server=http://{proxy}')
     options.add_extension('./nopecha.crx')
     
-    driver = uc.Chrome(options=options)
+    driver = webdriver.Chrome(options=options)
 
     driver.delete_all_cookies()
 
@@ -127,7 +133,7 @@ def Generate_Account_Details():
     return password, username, firstname, lastname, birth_day, birth_month, birth_year
 
 
-def Create_Outlook_Account(driver: uc.Chrome, password, username, firstname, lastname, birth_day, birth_month, birth_year):
+def Create_Outlook_Account(driver: webdriver.Chrome, password, username, firstname, lastname, birth_day, birth_month, birth_year):
 
     driver.get('https://outlook.live.com/owa/?nlp=1&signup=1')
 
@@ -208,7 +214,7 @@ if __name__ == "__main__":
 
             driver = Prepare_Env(proxy)
 
-            wait = WebDriverWait(driver, 10)
+            wait = WebDriverWait(driver, 40)
 
             password, username, firstname, lastname, day, month, year = Generate_Account_Details()
 
