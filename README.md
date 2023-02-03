@@ -50,9 +50,9 @@
 pip install -r requirements.txt
 ```
 
-<p align="center"><strong>(MacOS users should skip this) 2- Unzip NopeCHA-CAPTCHA-Solver.zip to a folder with the same name.</strong></p>
+<p align="center"><strong>(MacOS users should skip this step) 2- Unzip NopeCHA-CAPTCHA-Solver.zip to a folder with the same name.</strong></p>
 
-<p align="center"><strong>(MacOS users should skip this) 3- Copy NopeCHA-CAPTCHA-Solver folder to 'C:\Program Files\Google\Chrome\Application\109.0.5414.120'.</strong></p>
+<p align="center"><strong>(MacOS users should skip this step) 3- Copy NopeCHA-CAPTCHA-Solver folder to 'C:\Program Files\Google\Chrome\Application\109.0.5414.120'.</strong></p>
 
 <p align="center"><strong>4- Run this for MacOS</strong></p>
 
