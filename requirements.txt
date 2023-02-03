@@ -1,6 +1,6 @@
 selenium
 requests
-undetected-chromedriver
+undetected-chromedriver==3.1.7
 selenium-stealth
 random-password-generator
 Faker
